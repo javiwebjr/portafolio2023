@@ -64,17 +64,17 @@ const Contact = () => {
             whileInView="animate"
         >
             <motion.div className="textContainer" variants={variants}>
-                <motion.h3>¿Listo para un café?</motion.h3>
+                <motion.h3>Are you ready to work together?</motion.h3>
                 <motion.div className="item" variants={variants}>
                     <h4>Mail</h4>
                     <span>urissent@gmail.com</span>
                 </motion.div>
                 <motion.div className="item" variants={variants}>
-                    <h4>País</h4>
+                    <h4>Country</h4>
                     <span>El Salvador</span>
                 </motion.div>
                 <motion.div className="item" variants={variants}>
-                    <h4>Telefono</h4>
+                    <h4>Phone</h4>
                     <a href='https://api.whatsapp.com/send?phone=50371236891&text=Hola,%20vi%20tu%20portafolio%20web%20y%20estoy%20interesado/a%20en%20charlar%20sobre%20tus%20habilidades'>
                         <img src="/assets/whatsapp.svg" alt="Icon_Contact_Section" />
                     </a>
@@ -87,12 +87,12 @@ const Contact = () => {
                     onSubmit={sendEmail}
                     whileInView={{opacity: 1}} 
                 >
-                    <h4>Déjame un mensaje y me comunicaré contigo.</h4>
-                    <input type="text" required placeholder='Nombre:' name='name' />
+                    <h4>Leave a message and I will get in touch.</h4>
+                    <input type="text" required placeholder='Name:' name='name' />
                     <input type="email" required placeholder='Email:' name='email' />
-                    <textarea rows="8" placeholder='Escribe tu mensaje' name='message'/>
-                    <button>Enviar</button>
-                    {error && <p style={{color:"red", fontSize: "1.5rem"}}>Hubo un error</p> }
+                    <textarea rows="8" placeholder='Write Your Message' name='message'/>
+                    <button>Send</button>
+                    {error && <p style={{color:"red", fontSize: "1.5rem"}}>Error, Please Try Again</p> }
                     {success && <p style={{color: "green", fontSize: "1.5rem"}}>Pronto me pondre en contacto, tenemos trabajo pendiente!</p>}
                 </motion.form>
             </div>

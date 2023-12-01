@@ -16,13 +16,13 @@ const techs = [
     },
     {
         id: 4,
-        title: "PhP",
-        img: "/assets/techs/php.svg"
+        title: "Typescript",
+        img: "/assets/techs/typescript.svg"
     },
     {
         id: 5,
-        title: "Laravel",
-        img: "/assets/techs/laravel.svg"
+        title: "Angular",
+        img: "/assets/techs/angular.svg"
     },
     {
         id: 6,

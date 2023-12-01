@@ -5,24 +5,24 @@ import "./portfolio.scss";
 const items = [
     {
         id: 1,
-        title: "NodeJs BienesRaices App",
+        title: "NodeJs RealState Site",
         img: "/assets/BienesRaices.png",
-        description: "App mas completa pero sencilla en estilo, implementada seccion de busqueda, categorias, Pin en mapa por propiedades, sin embargo modulo SCRF no compatible en produccion y esta pendiende de actualizacion, aun asi puedes checar un vistazo al repositorio.",
+        description: "This was a big project for me, my first steps on nodejs and pug template, feel free to download and test or review my code. Actually working on update it with angular and typescript node.",
         link: 'https://github.com/javiwebjr/RealStates'
     },
     {
         id: 2,
-        title: "Administracion de citas de Veterinaria",
+        title: "Administrator Veterinarians",
         img: "/assets/Veterinaria.png",
-        description:"Esta app fue realmente sencilla, CRUD sin monitores de estados, sin embargo seguridad implementada como CORS, verificacion de email y olvido de contrasena, aunque este teniendo problemas con el deploy lo estare solucionando lo mas pronto posible, puedes checar el repositorio.",
+        description:"One of my first projects including email confirmation, forget password, and CRUD.",
         link: 'https://github.com/javiwebjr/VET_BACKEND'
     },
     {
         id: 3,
-        title: "Laravel React order food",
-        img: "/assets/Datecafe.png",
-        description: "Los requerimientos fueron simples, funcional y sencillo. Trabajar con ordenes ya sea para meseros o como quiosco en el restaurante.",
-        link: 'https://datecafequiosco.vercel.app/'
+        title: "MERN Ecommerce",
+        img: "/assets/eCommerce.png",
+        description: "My Latest And Great Project, Ecommerce - Online Shop with paypal, filtering products, redux, tailwind, mongoDB, express, and more... Feel free to download and test it.",
+        link: 'https://github.com/javiwebjr/VirtualShopElSalvador'
     }
 ];
 
@@ -40,7 +40,7 @@ const Single = ({item}) => {
                     <motion.div className="textContainer" style={{y}}>
                         <h2>{item.title}</h2>
                         <p>{item.description}</p>
-                        <a href={item.link} target='_blank'>Demo</a>
+                        <a href={item.link} target='_blank'>REPO</a>
                     </motion.div>
                 </div>
             </div>
@@ -59,7 +59,7 @@ const Portfolio = () => {
     return (
         <div className='portfolio' ref={ref}>
             <div className="progress">
-                <h1>Destacados</h1>
+                <h1>FullStack Progress</h1>
                 <motion.div style={{scaleX}} className="progressBar"></motion.div>
             </div>
             {items.map(item => (

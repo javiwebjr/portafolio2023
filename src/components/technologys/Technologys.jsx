@@ -24,12 +24,12 @@ const Technologys = () => {
             animate={"animate"}
         >
             <motion.div className="textContainer" variants={variants}>
-                <p>Soy un autodidacta que siempre busca aprender y como mejorar!</p>
+                <p>I am a self - learner who is always seeking to learn and improve!</p>
                 <hr />
             </motion.div>
             <motion.div className="titleContainer" variants={variants}>
                 <div className="title">
-                    <h2><motion.b whileHover={{color: "orange"}}>Siempre Dispuesto</motion.b> a Aprender</h2>
+                    <h2><motion.b whileHover={{color: "orange"}}>Always Ready</motion.b> and Willing</h2>
                 </div>
             </motion.div>
             <motion.div className="listContainer" variants={variants}>

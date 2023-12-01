@@ -54,14 +54,14 @@ const Hero = () => {
                             variants={textVariants} 
                             className='hero_cta cta_modifier'
                             whileHover={{backgroundColor:"transparent", color: "white"}}
-                        >Mis ultimos trabajos
+                        >My Work
                         </motion.a>
                         <motion.a 
                             href='#Contact' 
                             variants={textVariants} 
                             className='hero_cta'
                             whileHover={{backgroundColor:"white", color: "black"}}
-                        >Contáctame
+                        >Contact
                         </motion.a>
                     </motion.div>
                     <motion.h2 variants={textVariants}>Javier Urrutia</motion.h2>
@@ -80,7 +80,7 @@ const Hero = () => {
                 initial="initial" 
                 animate="animate"
             >
-                Tu visión, mi código
+                Your Vision, My Code
             </motion.div>
             <div className='imageContainer'>
                 <img src="/assets/logoHD.png" alt="Logo_Hero_Section"  />
