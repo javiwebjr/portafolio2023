@@ -33,16 +33,16 @@ const Single = ({item}) => {
     return(
         <section>
             <div className="container">
-                <div className="wrapper">
-                    <div className="imgContainer" ref={ref}>
+                <article className="wrapper">
+                    <figure className="imgContainer" ref={ref}>
                         <img src={item.img} alt="portfolio_img_section" />
-                    </div>
+                    </figure>
                     <motion.div className="textContainer" style={{y}}>
                         <h2>{item.title}</h2>
                         <p>{item.description}</p>
                         <a href={item.link} target='_blank'>REPO</a>
                     </motion.div>
-                </div>
+                </article>
             </div>
         </section>
     )
@@ -57,16 +57,16 @@ const Portfolio = () => {
         damping: 15
     })
     return (
-        <div className='portfolio' ref={ref}>
+        <main className='portfolio' ref={ref}>
             <div className="progress">
-                <h1>FullStack Progress</h1>
+                <h3>FullStack Progress</h3>
                 <motion.div style={{scaleX}} className="progressBar"></motion.div>
             </div>
             {items.map(item => (
                 <Single item={item} key={item.id}/>
             ))}
             
-        </div>
+        </main>
     )
 }
 

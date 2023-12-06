@@ -4,7 +4,7 @@ import "./navbar.scss"
 import Sidebar from '../sidebar/Sidebar';
 const Navbar = () => {
     return (
-        <div className='navbar'>
+        <nav className='navbar'>
             <Sidebar/>
             <div className="wrapper">
                 <motion.span 
@@ -15,7 +15,7 @@ const Navbar = () => {
                 >
                     Javier Urrutia
                 </motion.span>
-                <div className='social'>
+                <figure className='social'>
                     <motion.a href="https://github.com/javiwebjr" target='_blank' 
                         whileHover={{scale: 1.2, borderBottom: "0.5px solid gray"}}
                     >
@@ -36,9 +36,9 @@ const Navbar = () => {
                     >
                         <img src="/assets/whatsapp.svg" alt="Navbar_social_Icons" />
                     </motion.a>
-                </div>
+                </figure>
             </div>
-        </div>
+        </nav>
     )
 }
 

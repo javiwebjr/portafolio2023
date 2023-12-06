@@ -16,7 +16,7 @@ const Technologys = () => {
     // const inView = useInView(ref, {margin: "-100px"})
     //Agregar un contenedor sin el inView
     return (
-        <motion.div 
+        <motion.section 
             className='technologys' 
             variants={variants} 
             initial="initial" 
@@ -32,15 +32,15 @@ const Technologys = () => {
                     <h2><motion.b whileHover={{color: "orange"}}>Always Ready</motion.b> and Willing</h2>
                 </div>
             </motion.div>
-            <motion.div className="listContainer" variants={variants}>
+            <motion.article className="listContainer" variants={variants}>
                 {techs.map(item => (
-                    <motion.div className="box" key={item.id} whileHover={{ scale: 1.2 }}>
+                    <motion.figure className="box" key={item.id} whileHover={{ scale: 1.2 }}>
                         <img src={item.img} alt={`Imagen_Lista_Tecnologias${item.title}`} />
                         <span>{item.title}</span>
-                    </motion.div>
+                    </motion.figure>
                 ))}
-            </motion.div>
-        </motion.div>
+            </motion.article>
+        </motion.section>
     )
 }
 

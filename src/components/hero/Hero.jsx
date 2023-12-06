@@ -40,7 +40,7 @@ const sliderVariants ={
 
 const Hero = () => {
     return (
-        <div className='hero'>
+        <header className='hero'>
             <div className="wrapper">
                 <motion.div 
                     className='textContainer' 
@@ -48,7 +48,7 @@ const Hero = () => {
                     initial="initial" 
                     animate="animate"
                 >
-                    <motion.div className="buttons" variants={textVariants}>
+                    <motion.figure className="buttons" variants={textVariants}>
                         <motion.a 
                             href='#Portfolio' 
                             variants={textVariants} 
@@ -63,7 +63,7 @@ const Hero = () => {
                             whileHover={{backgroundColor:"white", color: "black"}}
                         >Contact
                         </motion.a>
-                    </motion.div>
+                    </motion.figure>
                     <motion.h2 variants={textVariants}>Javier Urrutia</motion.h2>
                     <motion.h1 variants={textVariants}>Web Developer FullStack</motion.h1>
                     <motion.img 
@@ -82,10 +82,10 @@ const Hero = () => {
             >
                 Your Vision, My Code
             </motion.div>
-            <div className='imageContainer'>
+            <figure className='imageContainer'>
                 <img src="/assets/logoHD.png" alt="Logo_Hero_Section"  />
-            </div>
-        </div>
+            </figure>
+        </header>
     )
 }
 export default Hero

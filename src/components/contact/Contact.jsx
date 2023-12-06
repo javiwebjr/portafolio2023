@@ -56,7 +56,7 @@ const Contact = () => {
     
 
     return (
-        <motion.div 
+        <motion.footer 
             ref={ref}
             className='contact' 
             variants={variants} 
@@ -96,7 +96,7 @@ const Contact = () => {
                     {success && <p style={{color: "green", fontSize: "1.5rem"}}>Pronto me pondre en contacto, tenemos trabajo pendiente!</p>}
                 </motion.form>
             </div>
-        </motion.div>
+        </motion.footer>
     )
 }
 
